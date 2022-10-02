@@ -1,0 +1,10 @@
+.payment-options-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flags{
+    display: flex;
+    margin: 10px;
+}

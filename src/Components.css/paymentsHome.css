@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+    --font-primary: "Urbanist", serif;
+    --color-one: #13293d;
+    --color-two: #006494;
+    --color-three: #247BA0;
+    --color-four: #1B98E0;
+    --color-five: #E8F1F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+.main-payment-container{
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.payment-div p{
+    color: #000;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.payment-icon{
+    width: 35px;
+    height: 35px;
+    color: rgb(173, 164, 164);
+}
+
+.payment-button{
+    padding: 10px;
+    color: #000;
+    border: none;
+    z-index: 999;
+    cursor: pointer;
+    background-color: var(--color-four);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+    .payment-div p{
+        font-size: 8px;
+    }
+
+    .payment-button{
+        padding: 4px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,19 @@
+.short-banner-main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+}
+
+.short-banner-image{
+    width: 98.5%;
+    height: 150px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .short-banner-image{
+        height: 100px;
+    }
+}

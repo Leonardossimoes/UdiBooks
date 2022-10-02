@@ -1,0 +1,14 @@
+:root{
+    --font-primary: "Urbanist", serif;
+    --color-one: #13293d;
+    --color-two: #006494;
+    --color-three: #247BA0;
+    --color-four: #1B98E0;
+    --color-five: #E8F1F2;
+}
+
+.main-home{
+    background: linear-gradient(to left, white 5%, var(--color-five) 95%);
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+    --font-primary: "Urbanist", serif;
+    --color-one: #13293d;
+    --color-two: #006494;
+    --color-three: #247BA0;
+    --color-four: #1B98E0;
+    --color-five: #E8F1F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+.credit-section{
+    width: 100%;
+    height: 400px;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-section-title{
+    text-align: center;
+    color: var(--color-five);
+    text-shadow: 0.5rem 0.5rem 0.5rem #000;
+}
+
+.title-top{
+    font-size: 40px;
+}
+
+.credit-section-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.credit-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-five);
+}
+
+.credit-card-info-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.credit-card-info-title, .credit-section-offers-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.credit-card-info-text{
+    font-size: 12px;
+    text-align: center;
+}
+
+.credit-card-info a{
+    text-decoration: none;
+    color: var(--color-two);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.credit-section-offers{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--color-five);
+}
+
+.credit-section-offers-input{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 2px #000 ;
+}
+
+.credit-section-offers-button{
+    width: 80%;
+    padding: 15px;
+    background: var(--color-four);
+    border: none;
+    box-shadow: 2px 2px 2px #000;
+    cursor: pointer;
+}
+
+.credit-section-offers-button:hover{
+    background: var(--color-one);
+    transition: 1s;
+}
+
+@media (max-width: 750px){
+    .credit-section{
+        height: 600px;
+    }
+
+    .credit-section-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .credit-section-offers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}

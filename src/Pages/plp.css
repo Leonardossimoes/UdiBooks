@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+    --font-primary: "Urbanist", serif;
+    --color-one: #13293d;
+    --color-two: #006494;
+    --color-three: #247BA0;
+    --color-four: #1B98E0;
+    --color-five: #E8F1F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+.plp-container{
+    width: 100%;
+    display: flex;
+}
+
+.plp-products-filter-title{
+    font-size: 15px;
+}
+
+.plp-product-filter-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plp-product-filter-list a {
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+.plp-product-filter-list a:hover {
+    color: var(--color-two);
+    transition: 1s;
+}
+
+.plp-products-section{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 1700px;
+}
+
+.plp-main-title{
+    padding: 25px;
+}
+
+@media (max-width: 900px){
+    .plp-products-section{
+        height: 6550px;
+    }
+}
